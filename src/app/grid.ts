@@ -1,22 +1,3 @@
-export const minimum = (...nums: number[]): number => {
-    let min = 9007199254740991;
-    for (const n of nums) {
-        if (n < min) {
-            min = n;
-        }
-    }
-    return min;
-};
-
-export const maximum = (...nums: number[]): number => {
-    let max = -9007199254740991;
-    for (const n of nums) {
-        if (n > max) {
-            max = n;
-        }
-    }
-    return max;
-};
 
 export default class Grid {
     public map = new Set<string>();
